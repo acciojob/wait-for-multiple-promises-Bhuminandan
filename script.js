@@ -36,7 +36,7 @@ Promise.all(promisesArr).then((results) => {
     const timeCol = document.createElement("td");
  
     proCol.textContent = result;
-    timeCol.textContent = (new Date() - startTime) / 1000;
+    timeCol.textContent = (new Date().getTime() - startTime) / 1000;
 
     row.appendChild(proCol);
     row.appendChild(timeCol);
@@ -49,7 +49,7 @@ Promise.all(promisesArr).then((results) => {
   const timeRow = document.createElement("tr");
   const timeCol = document.createElement("td");
 
-  const totalDuration = (new Date() - startTime) / 1000;
+  const totalDuration = (new Date().getTime()  - startTime) / 1000;
   timeCol.setAttribute("colspan", "2");
   timeCol.textContent = `Total: ${totalDuration.toFixed(3)}s`
 
@@ -57,5 +57,5 @@ Promise.all(promisesArr).then((results) => {
   tableBody.appendChild(timeRow);
 })
 
-const startTime =  new Date();
+const startTime =  new Date().getTime();
 
