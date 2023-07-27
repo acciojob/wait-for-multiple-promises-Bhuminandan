@@ -38,9 +38,9 @@ let prom3 = new Promise((resolve) => {
 
 arr.push(prom1, prom2, prom3);
 let outPut = document.getElementById("output");
-
+let loading = document.getElementById("loading");
 Promise.all(arr).then((promises) => {
-  // outPut.innerHTML = ``;
+  outPut.removeChild(loading);
   promises.forEach((promise) => {
     addToOutput(promise);
   })
