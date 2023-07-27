@@ -40,7 +40,7 @@ arr.push(prom1, prom2, prom3);
 let outPut = document.getElementById("output");
 
 Promise.all(arr).then((promises) => {
-  outPut.innerHTML = ``;
+  // outPut.innerHTML = ``;
   promises.forEach((promise) => {
     addToOutput(promise);
   })
