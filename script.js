@@ -12,7 +12,7 @@ let prom1 = new Promise((resolve) => {
      endTime1 = new Date().getTime();
      totalTime1 = endTime1 - startTime1;
     //  console.log(totalTime1/1000);
-  }, Math.floor(Math.random * 3000) + 1000);
+  }, Math.floor(Math.random() * 3000) + 1000);
 })
 
 
@@ -23,7 +23,7 @@ let prom2 = new Promise((resolve) => {
     endTime2 = new Date().getTime();
     totalTime2 = endTime2 - startTime2;
     //  console.log(totalTime2/1000);
-  }, Math.floor(Math.random * 3000) + 1000);
+  }, Math.floor(Math.random() * 3000) + 1000);
 })
 
 startTime3 = new Date().getTime();
@@ -33,7 +33,7 @@ let prom3 = new Promise((resolve) => {
     endTime3 = new Date().getTime();
     totalTime3 = endTime3 - startTime3;
     //  console.log(totalTime3/1000);
-  }, Math.floor(Math.random * 3000) + 1000);
+  }, Math.floor(Math.random() * 3000) + 1000);
 })
 
 arr.push(prom1, prom2, prom3);
